@@ -1,0 +1,13 @@
+.navbar__items{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.navbar__item button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+}

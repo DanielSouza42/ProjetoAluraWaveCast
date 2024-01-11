@@ -1,0 +1,175 @@
+@media only screen and (max-width: 1023px) {
+    .menu-lateral,
+    .rodape,
+    .cabecalho__botao,
+    .secao-horizontal .cartao__subtitulo,
+    .secao-horizontal .cartao__botao,
+    .secao-horizontal .cartao__player,
+    .secao-vertical .secao__link {
+        display: none;
+    }
+
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+
+    main{
+        margin-bottom: 186px;
+    }
+
+    .navbar {
+        display: block;
+        background-color: black;
+        opacity: 1;
+    }   
+
+    .secao-horizontal .cartao__imagem {
+        height: 4.58rem;
+    }
+ 
+    .secao-horizontal .cartao__titulo {
+        font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
+    }
+
+    .secao-horizontal .cartao{
+        column-gap: .5rem;
+       
+    }
+
+    .secao-vertical .cartao {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .cabecalho{
+        justify-self: center;
+    }
+
+
+    .secao-player{
+        position: fixed;
+        bottom: 56px;
+    }
+
+    .mobile-text{
+        display: inline;
+    }
+
+    .full-text{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .cabecalho .cabecalho__logo,
+    .cabecalho__botao__avancar {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .secao-horizontal .cartao__imagem {
+        height: 73px;
+    }
+
+    .secao-horizontal .cartao__titulo {
+        font: 700 16px/22px 'Open Sans', sans-serif;
+    }
+
+    .secao-horizontal .cartao__subtitulo {
+        font: 400 14px/19px 'Open Sans', sans-serif;
+        width: 100%;
+    }
+
+    .secao-vertical .cartao {
+        padding: 1.25rem;
+    }
+
+    .menu-lateral{
+        width: 208px;
+    }
+
+    main{
+        margin-bottom: 184px;
+    }
+    .secao-player{
+        /* grid-area: 3/1/4/3; */
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .mobile-text{
+        display: none;
+    }
+
+    .full-text{
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .navbar,
+    .cabecalho__logo {
+        display: none;
+    }
+
+    .menu-lateral{
+        width: 228px;
+    }
+
+    main{
+        margin-bottom: 184px;
+    }
+    .secao-player{
+        /* grid-area: main; */
+        width: calc(100vw - 228px);
+        position: fixed;
+        bottom: 0px;
+        left: 228px;
+        
+    }
+
+    .mobile-text{
+        display: none;
+    }
+
+    .full-text{
+        display: inline;
+    }
+}
+
+
+/* @media screen and (max-width:360px) {
+.secao-player{
+    display: grid;
+    grid-template-columns: 56px 1fr 32px;
+    grid-template-rows: 1fr 1fr auto;
+}
+
+.voltar10, .voltar-anterior, .avancar-proxima, .avancar10, .player_temporizador-cronometro span, .player_volume{
+    display: none;
+}
+    
+.player_descricao h3{
+    grid-area: 1/2/2/3;
+}
+.player_descricao span{
+    grid-area: 2/2/3/3;
+}
+.play{
+    grid-area: 1/3/3/4;
+}
+} */
